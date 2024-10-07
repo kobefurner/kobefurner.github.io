@@ -72,6 +72,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+.tiles .image img {
+    height: 200px; /* Set the desired height */
+    width: auto; /* Keep the width auto to maintain aspect ratio */
+    object-fit: cover; /* This ensures the image covers the area */
+    display: block; /* Ensures there are no gaps */
+    margin: 0 auto; /* Center the image */
+}
+
 /* Basic */
 
 	@-ms-viewport {
