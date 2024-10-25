@@ -79,10 +79,14 @@ section.tiles {
 }
 
 section.tiles article {
-    flex: 0 1 30%; /* Adjusts the width of each article to take up 30% of the row */
+    flex: 0 1 30%; /* Each project takes up 30% of the width */
     margin-bottom: 20px; /* Space between rows */
+}
+
+section.tiles article:nth-child(4) {
+    flex: 0 1 100%; /* The fourth project takes the entire width */
     display: flex;
-    flex-direction: column; /* Ensures the content inside each article is vertically aligned */
+    justify-content: center; /* Centers the single project */
 }
 
 .tiles .image img {
@@ -93,12 +97,6 @@ section.tiles article {
     margin: 0 auto;
 }
 
-.tiles .content {
-    flex-grow: 1; /* Ensures content fills the available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers the text inside the content div */
-}
 
 
 /* Basic */
