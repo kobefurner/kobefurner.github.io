@@ -72,13 +72,34 @@ input, select, textarea {
 	appearance: none;
 }
 
-.tiles .image img {
-    height: 200px; /* Set the desired height */
-    width: auto; /* Keep the width auto to maintain aspect ratio */
-    object-fit: cover; /* This ensures the image covers the area */
-    display: block; /* Ensures there are no gaps */
-    margin: 0 auto; /* Center the image */
+section.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+section.tiles article {
+    flex: 0 1 30%; /* Adjusts the width of each article to take up 30% of the row */
+    margin-bottom: 20px; /* Space between rows */
+    display: flex;
+    flex-direction: column; /* Ensures the content inside each article is vertically aligned */
+}
+
+.tiles .image img {
+    height: 200px; /* Keeps the height you want for the images */
+    width: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    display: block;
+    margin: 0 auto;
+}
+
+.tiles .content {
+    flex-grow: 1; /* Ensures content fills the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text inside the content div */
+}
+
 
 /* Basic */
 
