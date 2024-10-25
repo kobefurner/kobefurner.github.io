@@ -75,7 +75,8 @@ input, select, textarea {
 section.tiles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align items to the start of the row */
+    gap: 20px; /* Set space between items */
 }
 
 section.tiles article {
@@ -84,9 +85,8 @@ section.tiles article {
 }
 
 section.tiles article:nth-child(4) {
-    flex: 0 1 100%; /* The fourth project takes the entire width */
-    display: flex;
-    justify-content: center; /* Centers the single project */
+    flex: 0 1 30%; /* Ensure the fourth project takes up the same width */
+    margin: 0 auto; /* Center the fourth project in the second row */
 }
 
 .tiles .image img {
@@ -96,6 +96,7 @@ section.tiles article:nth-child(4) {
     display: block;
     margin: 0 auto;
 }
+
 
 
 
