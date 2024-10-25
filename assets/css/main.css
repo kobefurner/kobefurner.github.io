@@ -72,22 +72,7 @@ input, select, textarea {
 	appearance: none;
 }
 
-section.tiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; /* Align items to the start of the row */
-    gap: 20px; /* Set space between items */
-}
 
-section.tiles article {
-    flex: 0 1 30%; /* Each project takes up 30% of the width */
-    margin-bottom: 20px; /* Space between rows */
-}
-
-section.tiles article:nth-child(4) {
-    flex: 0 1 30%; /* Ensure the fourth project takes up the same width */
-    margin: 0 auto; /* Center the fourth project in the second row */
-}
 
 .tiles .image img {
     height: 200px; /* Keeps the height you want for the images */
